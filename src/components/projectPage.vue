@@ -75,10 +75,10 @@
         .try {
             object-fit: fill;
             position: absolute;
-            right: 47px;
-            top: 18px;
-            height: 175px;
-            width: 282px;
+            right: 37px;
+            top: 17px;
+            height: 187px;
+            width: 301px;
         }
         img {
             overflow: hidden;
