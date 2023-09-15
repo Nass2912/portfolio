@@ -10,7 +10,6 @@
         </div>
         <div class="projects__row-img-cont">
             <img class="try" src="src/assets/angelaw.png">
-            <img src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.angelaw.fr/">Angelaw</a></h1>
                 <p>Contract management software for startups and SMEs. Tech used was VueJs, AWS and Laravel mainly</p>
@@ -18,10 +17,17 @@
         </div>
         <div class="projects__row-img-cont">
             <img class="try" src="src/assets/merco.png">
-            <img src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            <img src="src/assets/laptop.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.mercedes-benz.co.uk/passengercars/being-an-owner/service-plan.html/">Mercedes UK</a></h1>
                 <p>Creating a platform for owners to buy serviceplans according to their car registration numbers. JAM Stack Application with microservice architecture deployed on AWS and VueJs and typescript as Front end, as well as contentul as CMS</p>
+            </div>
+        </div>
+        <div class="projects__row-img-cont">
+            <img class="try" src="src/assets/rails_recipe.png">
+            <div class="body-content">
+                <h1 class="title"><a target="_blank" href="https://github.com/Nass2912/rails_react_recipe">Rails and React</a></h1>
+                <p>Messing around with merging the powerful Rails Framework with a front end framework to discover the full capabilites of a neo-web app</p>
             </div>
         </div>
     </main>
@@ -70,15 +76,9 @@
         }
     }
     .projects__row-img-cont{
-        position: relative;
         margin-bottom: 2rem;
         .try {
-            object-fit: fill;
-            position: absolute;
-            right: 37px;
-            top: 17px;
-            height: 187px;
-            width: 301px;
+
         }
         img {
             overflow: hidden;
