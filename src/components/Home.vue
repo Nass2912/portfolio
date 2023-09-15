@@ -1,19 +1,24 @@
 <template>
-    <div class="content">
-        HEY, I'M ANAS,BUT YOU CAN CALL ME NASS 😉
-    </div>
-    <div class="sub-content">
-        A Full Stack Software Engineer always on the lookout for opprtunities <br> to try new things and build new stuff 🛠️
-    </div>
-    <div class="btn">
-        <v-btn variant="outlined">
-            Projects
-        </v-btn>
-    </div>
+    <main>
+        <div class="content">
+            HEY, I'M ANAS,BUT YOU CAN CALL ME NASS 😉
+        </div>
+        <div class="sub-content">
+            A Full Stack Software Engineer always on the lookout for opprtunities <br> to try new things and build new stuff 🛠️
+        </div>
+        <div class="btn">
+            <v-btn variant="outlined">
+                Projects
+            </v-btn>
+        </div>
+    </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,800;1,600&display=swap');
+  main {
+    min-height: 100vh;
+  }
 .content {
     width:82%;
     text-align: center;
@@ -32,7 +37,7 @@
     color: #333;
     text-align: center;
     width: 100%;
-    line-height: 1.6rem;
+    line-height: 2rem;
 }
 
 div.btn{

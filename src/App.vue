@@ -3,16 +3,18 @@
     <v-main>
       <navbar>
         <Home/>
-        <chatBtn/>
+        <aboutMe/>
       </navbar>
     </v-main>
   </v-app>
+  <chatBtn/>
 </template>
 
 <script>
 import navbar from './components/navbar.vue'
 import Home from './components/Home.vue'
 import chatBtn from './components/chatBtn.vue'
+import aboutMe from './components/aboutMe.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
   components: {
     navbar,
     Home,
-    chatBtn
+    chatBtn,
+    aboutMe
   },
 }
 </script>

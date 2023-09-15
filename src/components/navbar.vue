@@ -28,14 +28,14 @@
           ></v-list>
         </v-navigation-drawer>
   
-        <v-main style="height: 100vh;">
+        <v-main>
             <slot></slot>
         </v-main>
       </v-layout>
     </v-card>
   </template>
 
-<script>
+<script scoped>
 export default {
   data: () => ({
     drawer: false,

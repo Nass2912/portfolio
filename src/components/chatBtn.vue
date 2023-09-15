@@ -6,11 +6,12 @@
 
 <style lang="scss" scoped>
     .v-btn {
-        position: absolute;
+        border: none;
+        position: fixed;
         bottom: 5vh;
         right: 2vw;
-        height: 10vh;
-        width: 10vh;
+        height: 9vh;
+        width: 9vh;
         background: linear-gradient(90deg, rgba(144,12,63,1) 25%, rgba(199,0,57,1) 100%);
         i {
             color: #fff;
