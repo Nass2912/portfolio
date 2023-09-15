@@ -17,7 +17,6 @@
         </div>
         <div class="projects__row-img-cont">
             <img class="try" src="src/assets/merco.png">
-            <img src="src/assets/laptop.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.mercedes-benz.co.uk/passengercars/being-an-owner/service-plan.html/">Mercedes UK</a></h1>
                 <p>Creating a platform for owners to buy serviceplans according to their car registration numbers. JAM Stack Application with microservice architecture deployed on AWS and VueJs and typescript as Front end, as well as contentul as CMS</p>
@@ -35,6 +34,9 @@
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,500;1,600&display=swap');
+    main {
+        background-color: #fff;
+    }
     .content {
         position: relative;
         width: 82%;
@@ -77,9 +79,7 @@
     }
     .projects__row-img-cont{
         margin-bottom: 2rem;
-        .try {
-
-        }
+        background-color: #FAFAFA;
         img {
             overflow: hidden;
             height: auto;
