@@ -5,6 +5,8 @@
         <Home/>
         <aboutMe/>
         <projectPage/>
+        <contactMe/>
+        <footerVue/>
       </navbar>
     </v-main>
   </v-app>
@@ -17,6 +19,8 @@ import Home from './components/Home.vue'
 import chatBtn from './components/chatBtn.vue'
 import aboutMe from './components/aboutMe.vue'
 import projectPage from './components/projectPage.vue'
+import contactMe from './components/contactMe.vue'
+import footerVue from './components/footerVue.vue'
 
 export default {
   name: 'App',
@@ -26,7 +30,9 @@ export default {
     Home,
     chatBtn,
     aboutMe,
-    projectPage
+    projectPage,
+    contactMe,
+    footerVue
   },
 }
 </script>
