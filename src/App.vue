@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-main @main="logger" @aboutFn="aboutlogger">
+    <v-main @main="logger" @aboutFn="aboutlogger" @navBarText="redirectNav">
       <navbar>
-        <Home/>
-        <aboutMe/>
-        <projectPage ref="mainRef"/>
-        <contactMe ref="contactRef"/>
+        <Home ref="HomeRef"/>
+        <aboutMe ref="AboutRef"/>
+        <projectPage ref="ProjectRef"/>
+        <contactMe ref="ContactRef"/>
         <footerVue/>
       </navbar>
     </v-main>
@@ -36,10 +36,15 @@ export default {
   },
   methods: {
     logger(){
-      this.$refs.mainRef.$el.scrollIntoView({behavior: "smooth"});
+      this.$refs.ProjectRef.$el.scrollIntoView({behavior: "smooth"});
     },
     aboutlogger(){
-      this.$refs.contactRef.$el.scrollIntoView({behavior: "smooth"});
+      this.$refs.ContactRef.$el.scrollIntoView({behavior: "smooth"});
+    },
+    redirectNav(params){
+      console.log(params)
+      const constructedRef = `${params}Ref`
+      this.$refs[constructedRef].$el.scrollIntoView({behavior: "smooth"});
     }
   }
 }

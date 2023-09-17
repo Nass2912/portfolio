@@ -25,6 +25,7 @@
         >
           <v-list
             :items="items"
+            @click="clicker"
           ></v-list>
         </v-navigation-drawer>
   
@@ -71,6 +72,10 @@ export default {
     },
     aboutClick(){
       this.$parent.$emit('aboutFn')
+    },
+    clicker($event){
+      this.drawer = false
+      this.$parent.$emit('navBarText',$event.target.innerText)
     }
   }
 }

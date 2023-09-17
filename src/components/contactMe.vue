@@ -5,7 +5,7 @@
         </div>
         <div class="sub-content">
             Feel free to contact me via the form below and I will get back to you as soon as possible 
-            <v-form v-model="valid">
+            <v-form v-model="valid" @submit="onSubmit">
                 <v-container>
                 <v-row>
                     <v-col
@@ -92,6 +92,15 @@
         },
       ],
     }),
+    methods: {
+      onSubmit(){
+        if(this.valid) {
+          this.firstname = ''
+          this.message = ''
+          this.email = ''
+        }
+      }
+    }
   }
 </script>
 
