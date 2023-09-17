@@ -81,6 +81,10 @@
         @media only screen and (min-width: 600px) {
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fafafa;
         }
         .body-content {
             @media only screen and (min-width: 600px) {
