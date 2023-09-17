@@ -1,17 +1,21 @@
 <template>
     <div class="main">
-        <div class="title bolder">
-            SOCIAL
+      <div class="only-desktop">
+        <div class="only-desktop">
+          <div class="title bolder">
+              SOCIAL
+          </div>
+          <div class="icons">
+            <a href="https://github.com/Nass2912" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/soobrattyanas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </div>
-        <div class="icons">
-          <a href="https://github.com/Nass2912" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/soobrattyanas" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div class="note bolder">
-            NASS
-            <div class="subnote">
-                A Software Engineer looking for the one app that is going to make a difference
-            </div>
+          <div class="note bolder">
+              NASS
+              <div class="subnote">
+                  A Software Engineer looking for the one app that is going to make a difference
+              </div>
+          </div>
         </div>
         <div class="thank">
             © Copyright {{ year }} Made with ♡ by Nass
@@ -30,6 +34,19 @@
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;1,600&display=swap');
   .main {
+    .only-desktop {
+        @media only screen and (min-width: 600px) {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+      }
+      .only-desktop {
+        @media only screen and (min-width: 600px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
     .bolder {
       font-weight: 800;
     }

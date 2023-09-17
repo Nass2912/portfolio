@@ -78,12 +78,24 @@
         }
     }
     .projects__row-img-cont{
+        @media only screen and (min-width: 600px) {
+            display: flex;
+            align-items: center;
+        }
+        .body-content {
+            @media only screen and (min-width: 600px) {
+                width: 50vw;
+            }
+        }
         margin-bottom: 2rem;
         background-color: #FAFAFA;
         img {
             overflow: hidden;
             height: auto;
             width: 100vw;
+            @media only screen and (min-width: 600px) {
+                width: 50vw;
+            }
         }
     }
 

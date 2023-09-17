@@ -53,16 +53,28 @@
             padding: 10px;
             border-radius: 10%;
             background-color: #EFEFEF;
+            @media only screen and (min-width: 600px) {
+                width: 30vw;
+                border-radius: 2%;
+            }
+
         }
     }
 
     .body-content {
         margin: 3rem 1rem;
         padding: 0 1rem;
+        @media only screen and (min-width: 600px) {
+            text-align: center;
+        }
         .title {
             margin-bottom: 2rem;
             text-align: left;
             font-size: 18px;
+            @media only screen and (min-width: 600px) {
+                text-align: center;
+            }
+
         }
     }
     .sub-content {
@@ -76,6 +88,9 @@
         margin-left: 1rem;
         margin-top: 3rem;
         text-align: left;
+        @media only screen and (min-width: 600px) {
+            text-align: center;
+        }
         button {
             width: 50%;
             font-family: 'Source Sans 3', sans-serif;
@@ -83,6 +98,9 @@
             background-color: #C70039;
             color: #fff;
             font-size: 16px;
+            @media only screen and (min-width: 600px) {
+                width: 18%;
+            }
         }
     }
     }

@@ -67,6 +67,9 @@ export default {
     },
   },
   methods: {
+    isMobile(){
+      return window.innerWidth <= 600
+    },
     clickfn(){
       this.$parent.$emit('main')
     },
@@ -85,6 +88,12 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,700&display=swap');
     .v-layout {
       background-color: #EFEFEF;
+      .v-navigation-drawer {
+        position: fixed !important;
+      }
+      .v-toolbar {
+        position: fixed !important;
+      }
         .v-toolbar__content {
             background-color: #fff;
             .v-toolbar-title__placeholder {

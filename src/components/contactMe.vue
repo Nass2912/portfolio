@@ -128,6 +128,9 @@
             background-color: #C70039;
             color: #fff;
             font-size: 16px;
+            @media only screen and (min-width: 600px) {
+                width: 18% !important;
+            }
         }
     }
     .content {
