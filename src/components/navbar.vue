@@ -15,8 +15,13 @@
             cover
         ></v-img>
         <v-toolbar-title>NASS</v-toolbar-title>
-        <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        </v-app-bar>
+        <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        <div v-if="!isMobile" class="div-to-flex">
+          <ul class="unordered"  v-for="item in items" :key="item">
+            <li @click="clickerDesktop(item.value)" >{{item.value}}</li>
+          </ul>
+        </div>
+      </v-app-bar>
   
         <v-navigation-drawer
           v-model="drawer"
@@ -41,6 +46,7 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
+    isMobile: false,
     items: [
       {
         title: 'Home',
@@ -66,15 +72,18 @@ export default {
       this.drawer = false
     },
   },
+  mounted(){
+    this.isMobile = window.innerWidth < 600
+  },
   methods: {
-    isMobile(){
-      return window.innerWidth <= 600
-    },
     clickfn(){
       this.$parent.$emit('main')
     },
     aboutClick(){
       this.$parent.$emit('aboutFn')
+    },
+    clickerDesktop(params){
+      this.$parent.$emit('navBarText',params)
     },
     clicker($event){
       this.drawer = false
@@ -86,6 +95,19 @@ export default {
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,700&display=swap');
+    .div-to-flex {
+      display: flex;
+    }
+    .unordered {
+      li {
+        color: #000;
+        list-style: none;
+        margin-right: 2rem;
+        &:hover{ 
+          cursor: pointer;
+        }
+      }
+    }
     .v-layout {
       background-color: #EFEFEF;
       .v-navigation-drawer {

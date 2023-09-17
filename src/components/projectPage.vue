@@ -36,6 +36,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,500;1,600&display=swap');
     main {
         background-color: #fff;
+        @media only screen and (min-width: 600px) {
+            background-color: #fafafa;
+        }
+
     }
     .content {
         position: relative;
