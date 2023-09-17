@@ -14,7 +14,7 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga facere ipsum nam incidunt laborum omnis sed sequi odio voluptatibus? Amet earum, necessitatibus quam vel, quas hic modi nihil quia, suscipit quasi in et impedit facere dicta doloremque voluptates rem architecto! Praesentium id, eveniet quae excepturi voluptas rerum voluptate vel tempora!</p>
         </div>
         <div class="btn">
-            <v-btn variant="outlined">
+            <v-btn variant="outlined" @click="$parent.$emit('about')">
                 Contact
             </v-btn>
         </div>

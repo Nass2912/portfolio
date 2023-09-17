@@ -7,7 +7,7 @@
             A Full Stack Software Engineer always on the lookout for opprtunities <br> to try new things and build new stuff 🛠️
         </div>
         <div class="btn">
-            <v-btn variant="outlined">
+            <v-btn variant="outlined" @click="$parent.$emit('test')">
                 Projects
             </v-btn>
         </div>

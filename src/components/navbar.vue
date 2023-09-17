@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card >
       <v-layout>
         <!-- <v-system-bar color="deep-purple darken-3"></v-system-bar> -->
   
@@ -28,7 +28,7 @@
           ></v-list>
         </v-navigation-drawer>
   
-        <v-main>
+        <v-main @test="clickfn" @about="aboutClick">
             <slot></slot>
         </v-main>
       </v-layout>
@@ -65,6 +65,14 @@ export default {
       this.drawer = false
     },
   },
+  methods: {
+    clickfn(){
+      this.$parent.$emit('main')
+    },
+    aboutClick(){
+      this.$parent.$emit('aboutFn')
+    }
+  }
 }
 </script>
 

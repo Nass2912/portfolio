@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main @main="logger" @aboutFn="aboutlogger">
       <navbar>
         <Home/>
         <aboutMe/>
-        <projectPage/>
-        <contactMe/>
+        <projectPage ref="mainRef"/>
+        <contactMe ref="contactRef"/>
         <footerVue/>
       </navbar>
     </v-main>
@@ -34,5 +34,13 @@ export default {
     contactMe,
     footerVue
   },
+  methods: {
+    logger(){
+      this.$refs.mainRef.$el.scrollIntoView({behavior: "smooth"});
+    },
+    aboutlogger(){
+      this.$refs.contactRef.$el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 }
 </script>
