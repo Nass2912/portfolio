@@ -74,6 +74,9 @@ export default {
   },
   mounted(){
     this.isMobile = window.innerWidth < 600
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 600
+    })
   },
   methods: {
     clickfn(){
@@ -98,13 +101,24 @@ export default {
     .div-to-flex {
       display: flex;
     }
+    .v-responsive{
+      &.v-img {
+        &.mx-2 {
+          cursor: pointer;
+        }
+      }
+    } 
     .unordered {
       li {
+        font-weight: 500;
         color: #000;
         list-style: none;
         margin-right: 2rem;
+        transition: 0.3s;
         &:hover{ 
           cursor: pointer;
+          color: #C70039;
+          opacity: 1;
         }
       }
     }
@@ -122,6 +136,12 @@ export default {
                 font-family: 'Source Sans 3', sans-serif;
                 color: #000;
                 font-size: 16px;
+                font-weight: 600;
+                &:hover {
+                  color: #C70039;
+                  cursor: pointer;
+                  transition: 0.3s;
+                }
             }
             .v-btn__content {
                 color: #000;

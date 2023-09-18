@@ -41,6 +41,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,500;1,600&display=swap');
     main {
         padding-bottom: 2rem;
+        scroll-margin-top: 10px;
     }
     .flex-container {
         display: flex;

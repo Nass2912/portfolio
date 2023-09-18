@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     logger(){
-      this.$refs.ProjectRef.$el.scrollIntoView({behavior: "smooth"});
+      this.$refs.ProjectRef.$el.scrollIntoView({behavior: "smooth",});
     },
     aboutlogger(){
       this.$refs.ContactRef.$el.scrollIntoView({behavior: "smooth"});

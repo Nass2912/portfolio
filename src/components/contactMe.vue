@@ -105,6 +105,9 @@
 </script>
 
 <style lang="scss" scoped>
+    main {
+      scroll-margin-top: 10px;
+    }
     .sub-content {
         font-size: 16px;
         padding: 0 1rem;

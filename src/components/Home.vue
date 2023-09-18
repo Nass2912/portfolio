@@ -17,9 +17,10 @@
 <style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,800;1,600&display=swap');
   main {
+    scroll-margin-top: 250px;
     height: 92vh;
     @media only screen and (min-width: 600px) {
-        height: 67vh;
+        height: 76vh;
     }
   }
 .content {
@@ -33,7 +34,8 @@
     font-size: 35px;
     font-weight: 800;
     @media only screen and (min-width: 600px) {
-        margin-top: 25vh;
+        margin-top: 15vh;
+        font-size: 3rem;
     }
 }
 .sub-content {

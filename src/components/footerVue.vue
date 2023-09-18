@@ -34,6 +34,7 @@
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;1,600&display=swap');
   .main {
+    scroll-margin-top: 10px;
     .only-desktop {
         @media only screen and (min-width: 600px) {
           display: flex;
