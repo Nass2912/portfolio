@@ -7,7 +7,7 @@
     "build": "vite build",
     "lint": "vue-cli-service lint",
     "dev": "vite",
-    "start": "concurrently \"npm run build\" \"git subtree push --prefix dist origin gh-pages\""
+    "start": "concurrently \"npm run build\" \"git add .\" \"git commit -m 'rebuild'\" \"git push\" \"git subtree push --prefix dist origin gh-pages\""
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
