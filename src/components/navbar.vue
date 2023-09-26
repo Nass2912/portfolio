@@ -7,13 +7,10 @@
           color="primary"
           prominent
         >
-        <v-img
+        <img
             class="mx-2"
             src="../assets/pfpic.png"
-            max-height="40"
-            max-width="40"
-            cover
-        ></v-img>
+        />
         <v-toolbar-title>NASS</v-toolbar-title>
         <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <div v-if="!isMobile" class="div-to-flex">
