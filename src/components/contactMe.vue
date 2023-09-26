@@ -60,7 +60,6 @@
 </template>
 
 <script>
-  import * as Email from "@/assets/smtp/smtp.js";
   export default {
     data: () => ({
       valid: false,
@@ -97,17 +96,6 @@
       onSubmit(event){
         event.preventDefault()
         if(this.valid) {
-          Email.send({
-              Host : "smtp.elasticemail.com",
-              Username : "username",
-              Password : "password",
-              To : 'them@website.com',
-              From : "you@isp.com",
-              Subject : "This is the subject",
-              Body : "And this is the body"
-          }).then(
-            message => alert(message)
-          );
           this.firstname = ''
           this.message = ''
           this.email = ''
