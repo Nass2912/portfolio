@@ -9,7 +9,7 @@
         >
         <v-img
             class="mx-2"
-            :src="require('../assets/pfpic.png')"
+            src="../assets/pfpic.png"
             max-height="40"
             max-width="40"
             cover
