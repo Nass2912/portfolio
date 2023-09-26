@@ -14,7 +14,7 @@
             max-width="40"
             cover
         ></v-img>
-        <v-toolbar-title>TEST</v-toolbar-title>
+        <v-toolbar-title>NASS</v-toolbar-title>
         <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <div v-if="!isMobile" class="div-to-flex">
           <ul class="unordered"  v-for="item in items" :key="item">
