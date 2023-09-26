@@ -13,7 +13,7 @@ export default defineConfig({
       autoImport: true,
     }),
   ],
-  base: "/portfolio",
+  base: "portfolio/",
   define: { 'process.env': {} },
   resolve: {
     alias: {
