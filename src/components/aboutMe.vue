@@ -55,7 +55,7 @@
             border-radius: 10%;
             background-color: #EFEFEF;
             @media only screen and (min-width: 600px) {
-                width: 20vw;
+                padding: 10px 55px;
                 border-radius: 2%;
             }
 
