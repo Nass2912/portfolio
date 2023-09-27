@@ -4,7 +4,7 @@
             HEY, I'M ANAS,BUT YOU CAN CALL ME NASS 😉
         </div>
         <div class="sub-content">
-            A Full Stack Software Engineer always on the lookout for opprtunities <br> to try new things and build new stuff 🛠️
+            A Full Stack Software Engineer always on the lookout for opprtunities <br> to explore and <del>break</del> build new stuff 🛠️
         </div>
         <div class="btn">
             <v-btn variant="outlined" @click="$parent.$emit('test')">
@@ -35,7 +35,8 @@
     font-weight: 800;
     @media only screen and (min-width: 600px) {
         margin-top: 15vh;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        width: 60%;
     }
 }
 .sub-content {
