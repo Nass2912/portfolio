@@ -1,6 +1,6 @@
 <template>
     <v-btn icon="" variant="outlined" @click="clickFn">
-        <img src="../assets/icons8-resume-100.png" alt="resume logo" style="height: 50px">
+        <img src="../assets/icons8-resume-100.png" alt="resume logo" style="height: 50px" loading="lazy">
     </v-btn>
 </template>
 

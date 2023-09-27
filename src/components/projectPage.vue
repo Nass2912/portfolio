@@ -9,21 +9,21 @@
         
         </div>
         <div class="projects__row-img-cont">
-            <img class="try" src="../assets/angelaw.png">
+            <img class="try" src="../assets/angelaw.png" loading="lazy" alt="angelaw">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.angelaw.fr/">Angelaw</a></h1>
                 <p>Contract management software for startups and SMEs. Tech used was VueJs, AWS and Laravel mainly</p>
             </div>
         </div>
         <div class="projects__row-img-cont">
-            <img class="try" src="../assets/merco.png">
+            <img class="try" src="../assets/merco.png" loading="lazy" alt="mercedes">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.mercedes-benz.co.uk/passengercars/being-an-owner/service-plan.html/">Mercedes UK</a></h1>
                 <p>Creating a platform for owners to buy serviceplans according to their car registration numbers. JAM Stack Application with microservice architecture deployed on AWS and VueJs and typescript as Front end, as well as contentul as CMS</p>
             </div>
         </div>
         <div class="projects__row-img-cont">
-            <img class="try" src="../assets/rails_recipe.png">
+            <img class="try" src="../assets/rails_recipe.png" loading="lazy" alt="projects">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://github.com/Nass2912/rails_react_recipe">Rails and React</a></h1>
                 <p>Messing around with merging the powerful Rails Framework with a front end framework to discover the full capabilites of a neo-web app</p>
