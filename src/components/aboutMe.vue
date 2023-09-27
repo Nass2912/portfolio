@@ -11,7 +11,7 @@
         </div>
         <div class="body-content">
             <h1 class="title">Get to know me!</h1>
-            <p>I worked many jobs since my teenage years, be it delivery helper, website moderator, interior design and what not. Being a very curious person by nature and having that urge to always know how things work, I was presented with a great opportunity at Le Wagon to do a coding bootcamp. For me that rang a bell, "hey we'll finally know how the web works!". Since end of 2021,when I finished my bootcamp till now, I have been fascinated by the sofware engineering world and I have been able to contribute to some awesome projects and to also give back to the community through teaching at Le Wagon. My hobbies are varied but it always ends up falling into a sports category or something related to mechanics (bike and cars). I also love to explore the world and I'm probably never going to say no to a hike or a trek to a waterfall ! 😉</p>
+            <p>I worked many jobs since my teenage years, be it delivery helper, website moderator, interior design and what not. Being a very curious person by nature and having that urge to always know how things work, I was presented with a great opportunity at Le Wagon to do a coding bootcamp. For me that rang a bell, "hey we'll finally know how the web works!". Since end of 2021,when I finished my bootcamp till now, I have been fascinated by the sofware engineering world and I have been able to contribute to some awesome projects and to also give back to the community through teaching at Le Wagon. My hobbies are varied but it always ends up falling into a sports category of some kind or something related to mechanics (bike and cars, recently planes!). I also love to explore the world and I'm probably never going to say no to a hike or a trek to a waterfall ! 😉</p>
         </div>
         <div class="btn">
             <v-btn variant="outlined" @click="$parent.$emit('about')">
@@ -53,10 +53,12 @@
             margin-left: 0;
             padding: 10px;
             border-radius: 10%;
+            letter-spacing: 2px;
             background-color: #EFEFEF;
             @media only screen and (min-width: 600px) {
                 padding: 10px 55px;
                 border-radius: 2%;
+                letter-spacing: 4px;
             }
 
         }
