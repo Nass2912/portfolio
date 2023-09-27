@@ -5,8 +5,10 @@
         </div>
         <div class="sub-content">
             
-          Here you will find some professional project I worked on, personal project and a lot of trial and error!
-        
+          Here you will find some professional project I worked on, personal project and a lot of trials and explorations! To see more go to 
+        <a class="a-github" href="https://github.com/Nass2912" target="_blank">
+            My github
+        </a>
         </div>
         <div class="projects__row-img-cont">
             <img class="try" src="../assets/angelaw.png" loading="lazy" alt="angelaw">
@@ -41,6 +43,13 @@
             background-color: #fafafa;
         }
 
+    }
+    .a-github {
+        color: #900C3F;
+        text-decoration: none;
+        &::hover {
+            cursor: pointer;
+        }
     }
     .content {
         position: relative;

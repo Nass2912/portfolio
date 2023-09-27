@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="thank">
-            © Copyright {{ year }} Made with ♡ by Nass
+            © Copyright {{ year }} Made with ♡ by Nass using VueJs and Vuetify
         </div>
     </div>
 </template>
