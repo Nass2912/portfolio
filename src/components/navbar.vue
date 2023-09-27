@@ -19,6 +19,7 @@
         <div v-if="!isMobile" class="div-to-flex">
           <ul class="unordered"  v-for="item in items" :key="item">
             <li @click="clickerDesktop(item.value)" >{{item.value}}</li>
+            
           </ul>
         </div>
       </v-app-bar>
