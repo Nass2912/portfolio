@@ -18,7 +18,6 @@
                         :counter="10"
                         label="First name"
                         required
-                        hide-details
                     ></v-text-field>
                     </v-col>
 
@@ -31,7 +30,7 @@
                     v-model="email"
                     :rules="emailRules"
                     label="E-mail"
-                    hide-details
+                  
                     required
                     ></v-text-field>
                     </v-col>
@@ -39,11 +38,7 @@
                     cols="12"
                     md="4"
                     >
-                    <v-text-field
-                        v-model="message"
-                        label="message"
-                        hide-details
-                    ></v-text-field>
+                    <v-textarea label="Message" :rules="msgRules"></v-textarea>
                     </v-col>
                 </v-row>
                 </v-container>
@@ -89,6 +84,13 @@
           if (/.+@.+\..+/.test(value)) return true
 
           return 'E-mail must be valid.'
+        },
+      ],
+      msgRules: [
+        value => {
+          if (value) return true
+
+          return 'Message is required'
         },
       ],
     }),
