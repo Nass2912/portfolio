@@ -22,7 +22,7 @@
             <h1 class="title">My Stack</h1>
             <div class="flex-container">
                 <div class="flex-item">Vue</div>
-                <div class="flex-item">APIs</div>
+                <div class="flex-item">APIs </div>
                 <div class="flex-item">React</div>
                 <div class="flex-item">Javascript</div>
                 <div class="flex-item">AWS</div>

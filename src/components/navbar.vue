@@ -15,6 +15,11 @@
             cover
         />
         <v-toolbar-title>NASS</v-toolbar-title>
+        <div class="container" @click="myFunction" v-if="isMobile" @click.stop="drawer = !drawer">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <div v-if="!isMobile" class="div-to-flex">
           <ul class="unordered"  v-for="item in items" :key="item">
@@ -80,6 +85,9 @@ export default {
     })
   },
   methods: {
+    myFunction(event){
+      event.currentTarget.classList.toggle("change");
+    },
     clickfn(){
       this.$parent.$emit('main')
     },
@@ -98,6 +106,29 @@ export default {
 </script>
 
 <style lang="scss">
+div.container {
+  position: absolute;
+  right: 1rem;
+  background: #fff;
+  z-index: 123;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 6px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,700&display=swap');
     .div-to-flex {
       display: flex;
@@ -113,6 +144,9 @@ export default {
           border-radius: 50%;
           object-fit: cover;
         }
+      }
+      .v-btn {
+        visibility: hidden;
       }
     } 
     .unordered {
