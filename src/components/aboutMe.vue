@@ -15,7 +15,7 @@
         </div>
         <div class="btn">
             <v-btn variant="outlined" @click="$parent.$emit('about')">
-                Contact
+                Let's talk!
             </v-btn>
         </div>
         <div class="body-content">
