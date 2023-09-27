@@ -10,7 +10,9 @@
       </navbar>
     </v-main>
   </v-app>
-  <chatBtn/>
+  <chatBtn @mainer="tester"/>
+  <formModal v-if="modalShow" @closed="modalShow = false" @notify="notifier = true" />
+  <v-alert closable text="Download Succesful" variant="outlined" v-if="notifier"></v-alert>
 </template>
 
 <script>
@@ -21,9 +23,17 @@ import aboutMe from './components/aboutMe.vue'
 import projectPage from './components/projectPage.vue'
 import contactMe from './components/contactMe.vue'
 import footerVue from './components/footerVue.vue'
+import formModal from './components/formModal.vue'
 
 export default {
   name: 'App',
+
+  data(){
+    return {
+      modalShow: false,
+      notifier: false
+    }
+  },
 
   components: {
     navbar,
@@ -32,9 +42,13 @@ export default {
     aboutMe,
     projectPage,
     contactMe,
-    footerVue
+    footerVue,
+    formModal
   },
   methods: {
+    tester(){
+      this.modalShow = true
+    },
     logger(){
       this.$refs.ProjectRef.$el.scrollIntoView({behavior: "smooth",});
     },
@@ -49,3 +63,13 @@ export default {
   }
 }
 </script>
+
+<style scoped >
+  .v-alert {
+    position: fixed;
+    bottom: 2rem;
+    left: 1rem;
+    background: #C70039;
+    color: #fff;
+  }
+</style>

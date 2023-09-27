@@ -9,7 +9,10 @@
         >
         <img
             class="mx-2"
-            src="../assets/pfpic.png"
+            src="src/assets/pfpic.png"
+            max-height="40"
+            max-width="40"
+            cover
         />
         <v-toolbar-title>NASS</v-toolbar-title>
         <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -98,10 +101,16 @@ export default {
     .div-to-flex {
       display: flex;
     }
-    .v-responsive{
-      &.v-img {
+    .v-toolbar__content{
+      & img {
         &.mx-2 {
           cursor: pointer;
+          margin-right: 0 !important;
+          height: 40px;
+          width: 40px;
+          border: 1px solid black;
+          border-radius: 50%;
+          object-fit: cover;
         }
       }
     } 
