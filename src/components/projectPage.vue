@@ -99,13 +99,14 @@
             width: 80%;
             margin: 0 auto;
             background-color: #fafafa;
+            margin-bottom: 2rem;
         }
         .body-content {
             @media only screen and (min-width: 600px) {
                 width: 50vw;
             }
         }
-        margin-bottom: 2rem;
+        margin-bottom: 0;
         background-color: #FAFAFA;
         img {
             overflow: hidden;
