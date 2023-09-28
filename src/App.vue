@@ -56,7 +56,6 @@ export default {
       this.$refs.ContactRef.$el.scrollIntoView({behavior: "smooth"});
     },
     redirectNav(params){
-      console.log(params)
       const constructedRef = `${params}Ref`
       this.$refs[constructedRef].$el.scrollIntoView({behavior: "smooth"});
     }

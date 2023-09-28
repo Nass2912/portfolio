@@ -7,20 +7,14 @@
           color="primary"
           prominent
         >
-        <img
-            class="mx-2"
-            src="../assets/pfpic.png"
-            max-height="40"
-            max-width="40"
-            cover
-        />
+        <img class="mx-2" src="../assets/pfpic.png"/>
         <v-toolbar-title>NASS</v-toolbar-title>
-        <div class="container" @click="myFunction" v-if="isMobile" @click.stop="drawer = !drawer">
+        <div class="container" @click.stop="myFunction" v-if="isMobile">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-        <v-app-bar-nav-icon v-if="isMobile" variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon v-if="isMobile" variant="text"></v-app-bar-nav-icon>
         <div v-if="!isMobile" class="div-to-flex">
           <ul class="unordered"  v-for="item in items" :key="item">
             <li @click="clickerDesktop(item.value)" >{{item.value}}</li>
@@ -51,8 +45,8 @@
 export default {
   data: () => ({
     drawer: false,
-    group: null,
     isMobile: false,
+    crossMobile: '',
     items: [
       {
         title: 'Home',
@@ -74,9 +68,11 @@ export default {
   }),
 
   watch: {
-    group () {
-      this.drawer = false
-    },
+    drawer() {
+      if(!this.drawer){
+        this.crossMobile.classList.remove("change");
+      }
+    }
   },
   mounted(){
     this.isMobile = window.innerWidth < 600
@@ -86,7 +82,9 @@ export default {
   },
   methods: {
     myFunction(event){
-      event.currentTarget.classList.toggle("change");
+      this.drawer = !this.drawer
+      this.crossMobile = event.currentTarget
+      this.crossMobile.classList.add("change");
     },
     clickfn(){
       this.$parent.$emit('main')
@@ -99,6 +97,7 @@ export default {
     },
     clicker($event){
       this.drawer = false
+      this.crossMobile.classList.add("change");
       this.$parent.$emit('navBarText',$event.target.innerText)
     }
   }
