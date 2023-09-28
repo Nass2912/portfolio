@@ -71,6 +71,8 @@ export default {
     drawer() {
       if(!this.drawer){
         this.crossMobile.classList.remove("change");
+      }else {
+        this.crossMobile.classList.add("change");
       }
     }
   },
@@ -84,7 +86,6 @@ export default {
     myFunction(event){
       this.drawer = !this.drawer
       this.crossMobile = event.currentTarget
-      this.crossMobile.classList.add("change");
     },
     clickfn(){
       this.$parent.$emit('main')
@@ -97,7 +98,6 @@ export default {
     },
     clicker($event){
       this.drawer = false
-      this.crossMobile.classList.add("change");
       this.$parent.$emit('navBarText',$event.target.innerText)
     }
   }
