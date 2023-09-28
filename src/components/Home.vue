@@ -4,7 +4,7 @@
             HEY, I'M ANAS,BUT YOU CAN CALL ME NASS 😉
         </div>
         <div class="sub-content">
-            A Full Stack Software Engineer always on the lookout for opprtunities <br> to explore and <del>break</del> build new stuff 🛠️
+            A Full Stack Software Engineer always on the lookout for opportunities <br> to explore and <del>break</del> build new stuff 🛠️
         </div>
         <div class="btn">
             <v-btn variant="outlined" @click="$parent.$emit('test')">
