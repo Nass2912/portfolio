@@ -4,12 +4,6 @@
             <div class="content">
             ABOUT ME
             </div>
-            <div class="sub-content">
-                
-              Here you will find more information about me, what I do, and my
-              current skills mostly in terms of programming and technology
-            
-            </div>
             <div class="body-content">
                 <h1 class="title">Get to know me!</h1>
                 <p>I worked many jobs since my teenage years, be it delivery helper, website moderator, interior design and what not. Being a very curious person by nature and having that urge to always know how things work, I was presented with a great opportunity at Le Wagon to do a coding bootcamp. For me that rang a bell, "hey we'll finally know how the web works!".<br><br> Since end of 2021,when I finished my bootcamp till now, I have been fascinated by the sofware engineering world and I have been able to contribute to some awesome projects and to also give back to the community through teaching at Le Wagon.<br><br> My hobbies are varied but it always ends up falling into a sports category of some kind or something related to mechanics (bike and cars, recently planes!). I also love to explore the world and I'm probably never going to say no to a hike or a trek to a waterfall ! 😉</p>
@@ -69,14 +63,15 @@
     .body-content {
         margin: 3rem 1rem;
         padding: 0 1rem;
-        width: 60vw;
-        margin: 1rem auto;
+        margin: 0 auto;
+        width: 90vw;
         @media only screen and (min-width: 600px) {
+            width: 60vw;
             text-align: center;
         }
         .title {
-            margin-bottom: 2rem;
-            text-align: left;
+            margin: 2rem 0;
+            text-align: center;
             font-size: 18px;
             @media only screen and (min-width: 600px) {
                 text-align: center;
@@ -107,7 +102,7 @@
         .btn{
         margin-left: 1rem;
         margin-top: 3rem;
-        text-align: left;
+        text-align: center;
         @media only screen and (min-width: 600px) {
             text-align: center;
         }
@@ -149,8 +144,5 @@
             border-radius: 10%;
             border-top: 5px solid #C70039;
         }
-    }
-    main .body-content {
-        width: 100%
     }
 </style>
