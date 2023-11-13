@@ -37,11 +37,17 @@
       },
       downloader(event){
         event.preventDefault()
-        window.open("https://drive.google.com/u/0/uc?id=1fWw1S9xk5SM_MXzh-CHmSUhDeGeEHZ5C&export=download")
+        this.downloadFile("https://drive.google.com/u/0/uc?id=1fWw1S9xk5SM_MXzh-CHmSUhDeGeEHZ5C&export=download")
         setTimeout(() => {
             this.$emit("closed", true)
             this.$emit("notify", true)
         }, 200);
+      },
+      downloadFile(filePath){
+        const link=document.createElement('a');
+        link.href = filePath;
+        link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+        link.click();
       }
     }
   }
