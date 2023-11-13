@@ -37,7 +37,7 @@
       },
       downloader(event){
         event.preventDefault()
-        window.open("https://drive.google.com/uc?export=download&id=1S5g50tXQcj4cQsWnNM3Ys1VFfZTyeuWo")
+        window.open("https://drive.google.com/u/0/uc?id=1fWw1S9xk5SM_MXzh-CHmSUhDeGeEHZ5C&export=download")
         setTimeout(() => {
             this.$emit("closed", true)
             this.$emit("notify", true)

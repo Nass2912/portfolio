@@ -87,7 +87,7 @@
     }
     .test {
         .body-content {
-            width:
+            // width:
         }
     }
     .sub-content {
