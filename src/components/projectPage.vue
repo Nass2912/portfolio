@@ -99,7 +99,6 @@
             width: 80%;
             margin: 0 auto;
             background-color: #fafafa;
-            margin-bottom: 2rem;
         }
         .body-content {
             @media only screen and (min-width: 600px) {

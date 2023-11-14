@@ -23,8 +23,7 @@
         <div class="body-content">
             <h1 class="title">My Stack</h1>
             <div class="flex-container">
-                <div class="flex-item">Vue</div>
-                <div class="flex-item">APIs </div>
+                <div class="flex-item">VueJs</div>
                 <div class="flex-item">React</div>
                 <div class="flex-item">Javascript</div>
                 <div class="flex-item">AWS</div>
@@ -32,6 +31,7 @@
                 <div class="flex-item">Github Actions</div>
                 <div class="flex-item">PostgreSQL</div>
                 <div class="flex-item">NodeJs</div>
+                <div class="flex-item">APIs </div>
                 <div class="flex-item">HTML</div>
                 <div class="flex-item">SCSS</div>
             </div>
@@ -48,6 +48,13 @@
     .flex-container {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (min-width: 600px) {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
         .flex-item {
             font-family: 'Source Sans 3', sans-serif;
             font-size: 14px;
@@ -61,8 +68,6 @@
                 padding: 10px 55px;
                 border-radius: 2%;
                 letter-spacing: 4px;
-                width: 80vw;
-                margin: 0 auto;
             }
 
         }
