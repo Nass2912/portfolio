@@ -61,6 +61,8 @@
                 padding: 10px 55px;
                 border-radius: 2%;
                 letter-spacing: 4px;
+                width: 80vw;
+                margin: 0 auto;
             }
 
         }
@@ -83,6 +85,12 @@
                 text-align: center;
             }
 
+        }
+        p {
+            @media only screen and (min-width: 600px) {
+                width: 60vw;
+                margin: 0 auto;
+            }
         }
     }
     .test {
