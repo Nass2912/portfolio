@@ -4,7 +4,7 @@
             HEY, I'M ANAS,BUT YOU CAN CALL ME NASS 😉
         </div>
         <div class="sub-content">
-            A Full Stack Software Engineer always on the lookout for opportunities <br> to explore and <del>break</del> build new stuff 🛠️
+            A Full Stack Software Engineer always on the lookout for opportunities <br> to explore and <span id="element"></span> new stuff 🛠️ 
         </div>
         <div class="btn">
             <v-btn variant="outlined" @click="$parent.$emit('test')">
@@ -13,6 +13,22 @@
         </div>
     </main>
 </template>
+
+<script>
+import Typed from 'typed.js';
+
+export default {
+    mounted(){
+        new Typed('#element', {
+            strings: ['<del> break</del>', '  build '],
+            typeSpeed: 50,
+            backDelay: 700,
+            loop: true
+        });
+    }
+}
+  
+</script>
 
 <style lang="scss" scoped>
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,800;1,600&display=swap');

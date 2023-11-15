@@ -26,7 +26,7 @@
           :delay="200"
           :initial="{
             opacity: 0,
-            x: 100,
+            x: -100,
           }"
           :visible="{
             opacity: 1,
@@ -64,7 +64,7 @@
           :delay="200"
           :initial="{
             opacity: 0,
-            x: 100,
+            x: -100,
           }"
           :visible="{
             opacity: 1,

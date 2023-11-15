@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import { MotionPlugin } from '@vueuse/motion'
 
+
 loadFonts()
 
 createApp(App)
