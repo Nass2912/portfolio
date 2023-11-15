@@ -7,11 +7,12 @@
     "build": "vite build",
     "lint": "vue-cli-service lint",
     "dev": "vite",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@vueuse/motion": "^2.0.0",
     "core-js": "^3.8.3",
     "roboto-fontface": "*",
     "scss": "^0.2.4",

@@ -2,10 +2,28 @@
   <v-app>
     <v-main @main="logger" @aboutFn="aboutlogger" @navBarText="redirectNav">
       <navbar>
-        <Home ref="HomeRef"/>
-        <aboutMe ref="AboutRef"/>
-        <projectPage ref="ProjectRef"/>
-        <contactMe ref="ContactRef"/>
+        <Home
+          ref="HomeRef"
+          v-motion
+          :initial="{ opacity: 0, x: 100 }"
+          :enter="{ opacity: 1, x: 0, scale: 1 }"
+          :delay="400"
+        />
+        <aboutMe 
+          ref="AboutRef"
+          v-motion-slide-visible-left
+          :delay="400"
+        />
+        <projectPage 
+          ref="ProjectRef"
+          v-motion-slide-visible-right
+          :delay="400"
+        />
+        <contactMe 
+          ref="ContactRef"
+          v-motion-slide-visible-left
+          :delay="400"
+        />
         <footerVue/>
       </navbar>
     </v-main>
