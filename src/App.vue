@@ -5,9 +5,20 @@
         <Home
           ref="HomeRef"
           v-motion
-          :initial="{ opacity: 0, x: 100 }"
-          :enter="{ opacity: 1, x: 0, scale: 1 }"
-          :delay="400"
+          :initial="{
+            x: -100,
+            opacity: 0,
+          }"
+          :enter="{
+            x: 0,
+            opacity: 1,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 50,
+              mass: 0.5,
+            },
+          }"
         />
         <aboutMe 
           ref="AboutRef"
