@@ -22,18 +22,60 @@
         />
         <aboutMe 
           ref="AboutRef"
-          v-motion-slide-visible-left
-          :delay="400"
+          v-motion
+          :delay="200"
+          :initial="{
+            opacity: 0,
+            x: 100,
+          }"
+          :visible="{
+            opacity: 1,
+            x: 0,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 50,
+              mass: 0.5,
+            },
+          }"
         />
         <projectPage 
           ref="ProjectRef"
-          v-motion-slide-visible-right
-          :delay="400"
+          v-motion
+          :delay="200"
+          :initial="{
+            opacity: 0,
+            x: -100,
+          }"
+          :visible="{
+            opacity: 1,
+            x: 0,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 50,
+              mass: 0.5,
+            },
+          }"
         />
         <contactMe 
           ref="ContactRef"
-          v-motion-slide-visible-left
-          :delay="400"
+          v-motion
+          :delay="200"
+          :initial="{
+            opacity: 0,
+            x: 100,
+          }"
+          :visible="{
+            opacity: 1,
+            x: 0,
+            transition: {
+              type: 'spring',
+              stiffness: 100,
+              damping: 50,
+              mass: 0.5,
+            },
+          }"
         />
         <footerVue/>
       </navbar>
