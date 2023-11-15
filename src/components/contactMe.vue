@@ -5,7 +5,13 @@
         </div>
         <div class="sub-content">
             Feel free to contact me via the form below and I will get back to you as soon as possible 
-            <v-form v-model="valid" @submit="onSubmit">
+            <v-form 
+              ref="myForm"
+              v-model="valid" 
+              @submit="onSubmit"
+              action="https://formspree.io/f/mvojnawe"
+              method="POST"
+            >
                 <v-container>
                 <v-row>
                     <v-col
@@ -14,6 +20,7 @@
                     >
                     <v-text-field
                         v-model="firstname"
+                        name="firstname"
                         :rules="nameRules"
                         :counter="10"
                         label="First name"
@@ -28,6 +35,7 @@
                     >
                     <v-text-field
                     v-model="email"
+                    name="email"
                     :rules="emailRules"
                     label="E-mail"
                   
@@ -38,7 +46,8 @@
                     cols="12"
                     md="4"
                     >
-                    <v-textarea label="Message" :rules="msgRules"></v-textarea>
+                    <v-textarea label="Message" :rules="msgRules" 
+                        name="message" v-model="message"></v-textarea>
                     </v-col>
                 </v-row>
                 </v-container>
@@ -98,6 +107,7 @@
       onSubmit(event){
         event.preventDefault()
         if(this.valid) {
+          event.srcElement.submit()
           this.firstname = ''
           this.message = ''
           this.email = ''
