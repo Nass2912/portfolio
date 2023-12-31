@@ -36,11 +36,16 @@
                 <div class="flex-item">SCSS</div>
             </div>
         </div>
+        <div class="badger" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2cdd1f95-d6ad-492f-85dd-d2e643f4d044" data-share-badge-host="//www.credly.com"></div>
     </main>
 </template>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,500;1,600&display=swap');
+    .badger {
+        height: 100px;
+        width: 100px;
+    }
     main {
         padding-bottom: 2rem;
         scroll-margin-top: 10px;
