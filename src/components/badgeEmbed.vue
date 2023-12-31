@@ -3,7 +3,7 @@
     <div>
       <div
         data-iframe-width="150"
-        data-iframe-height="270"
+        data-iframe-height="250"
         data-share-badge-id="2cdd1f95-d6ad-492f-85dd-d2e643f4d044"
         data-share-badge-host="https://www.credly.com"
       ></div>

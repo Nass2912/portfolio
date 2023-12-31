@@ -36,7 +36,10 @@
                 <div class="flex-item">SCSS</div>
             </div>
         </div>
-        <BadgeEmbed/>
+        <div class="body-content">
+            <h1 class="title">My Certifications</h1>
+            <BadgeEmbed/>
+        </div>
     </main>
 </template>
 
