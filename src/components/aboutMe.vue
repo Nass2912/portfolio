@@ -21,10 +21,6 @@
             </div>
         </div>
         <div class="body-content">
-            <h1 class="title">My Certifications</h1>
-            <BadgeEmbed/>
-        </div>
-        <div class="body-content">
             <h1 class="title">My Stack</h1>
             <div class="flex-container">
                 <div class="flex-item">VueJs</div>
@@ -39,6 +35,10 @@
                 <div class="flex-item">HTML</div>
                 <div class="flex-item">SCSS</div>
             </div>
+        </div>
+        <div class="body-content">
+            <h1 class="title">My Certifications</h1>
+            <BadgeEmbed/>
         </div>
     </main>
 </template>
