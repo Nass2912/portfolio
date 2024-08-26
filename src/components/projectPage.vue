@@ -18,6 +18,13 @@
             </div>
         </div>
         <div class="projects__row-img-cont">
+            <img class="try" src="../assets/dvbuyers.png" loading="lazy" alt="angelaw">
+            <div class="body-content">
+                <h1 class="title"><a target="_blank" href="https://www.angelaw.fr/">DV Buyer's Agency</a></h1>
+                <p>Responsible to maintain and revamp an existing platform for a real estate acquisition service based in Australia</p>
+            </div>
+        </div>
+        <div class="projects__row-img-cont">
             <img class="try" src="../assets/merco.png" loading="lazy" alt="mercedes">
             <div class="body-content">
                 <h1 class="title"><a target="_blank" href="https://www.mercedes-benz.co.uk/passengercars/being-an-owner/service-plan.html/">Mercedes UK</a></h1>
