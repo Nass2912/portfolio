@@ -37,6 +37,7 @@
       },
       downloader(event){
         event.preventDefault()
+        
         this.downloadFile("https://drive.usercontent.google.com/u/0/uc?id=1ZN-4yLXqXb_Web_LtDXJAL6I90Q1LTyW&export=download")
         setTimeout(() => {
             this.$emit("closed", true)
